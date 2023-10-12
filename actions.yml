@@ -1,1 +1,13 @@
-Here
+name: 'My first container action'
+description: 'Creating container action'
+inputs:
+  my-Input:  # id of input
+    description: 'greeting to use'
+    required: true
+    default: 'Sully98'
+outputs:
+  myOutput: # id of output
+    description: 'Total Memory'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
